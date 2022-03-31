@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+
+  ul
+  each val in genre_list
+    li
+      a(href=val.url)  #{val.name} 
+  else  
+    li There are no genres.
+
+  //- dl
+  //-     each val in genre_list
+  //-       dt
+  //-         a(href=val.url)  #{val.name}
+  //-     else  
+  //-       p There are no genres.
